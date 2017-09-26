@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<stl_head>
+<meta http-equiv="Content-Type" content="text/html; charset=<tag:charset />">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title><tag:page_title /></title>
+<style type="text/css">
+*{ margin:0; padding: 0 }
+.clearfix:before,
+.clearfix:after {content: '\0020';display: block;overflow: hidden;visibility: hidden;width: 0;height: 0}
+.clearfix:after {clear: both}
+.clearfix {zoom: 1}
+body,html{height: 100%}
+body{-webkit-text-size-adjust:100%;font-family:Arial, Helvetica, sans-serif;background-color: #e9f5f5; background-image: url(bg.jpg);background-repeat: no-repeat;background-position:  right center; background-size: cover; background-attachment: fixed;}
+
+a{text-decoration: none; outline: none}
+a:hover{cursor: pointer}
+img{border: none}
+
+.header{text-align: center;padding: 24px 10px;background-color: #2dd5df}
+.heading{font-size:30px; font-weight: bold;color: #ffffff;line-height: 33px}
+
+.wrapper{width:800px;margin:0 auto;}
+
+.inner-spons-links { color: #4c4c4c; padding: 60px 0 8px;font-size: 16px;word-wrap:break-word}
+
+ul{list-style: none}
+.results li{ display: block; margin-bottom: 20px; position: relative}
+
+.num{font-size: 25px;color: #fff;float: left;line-height: 44px;font-weight: normal;height: 44px;width: 48px;text-align: center;background:#2dd5df;margin: 13px 0}
+.adTextWrap{float:left;width: 87%; padding: 0 0 0 20px}
+.list{ word-wrap:break-word; display: block; padding: 20px 60px 20px 0; background:#ffffff url(arrow.png) 97% center no-repeat; border: 1px solid #2dd5df;border-radius: 5px}
+.title{font-size: 24px;color: #27c9d3; line-height: 27px;margin-bottom: 5px; font-weight: bold}
+.desc{color: #333339;font-size: 16px;line-height: 20px; margin: 0 0 1px;display: block;}
+.sepr{color:#333339;font-size: 17px;display: none;}
+.url{color:#333339; font-size: 16px;display: block;}
+
+.results li:hover .list { background:#2dd5df url(arrowHover.png) 97% center no-repeat}
+.results li:hover .title, .results li:hover .desc, .results li:hover .sepr, .results li:hover .url{color:#fff}
+.results li:hover .title {color: #ffffff;}
+.results li:hover .sepr, li:hover .desc, li:hover .url{color: #ffffff;}
+li:hover .num{color: #2dd5df;background:#fff}
+
+#optOutLink{text-align: center; padding: 30px 0;color:#000;width: 100%}
+#optOutLink a{color:#000;font-size: 14px;text-transform:capitalize}
+#optOutLink a:hover{text-decoration: underline}
+
+@media not all and (min-width: 900px){ 
+  .wrapper {width: 90% !important}
+}
+
+@media not all and (min-width: 880px){
+  body{background-position: 0px center !important}
+}
+
+@media not all and (min-width: 767px) {
+  body{background-size: 100% !important; background-position: right top !important; background-attachment: scroll !important;}
+  .header{padding: 15px 10px !important}
+  .heading{font-size: 17px !important; line-height: 20px !important}
+  .inner-spons-links{font-size: 14px !important; padding-top: 100px !important; color: #000 !important}
+  .adTextWrap{width: 83%!important; padding:0 0 0 12px !important}
+  .results li {margin-bottom: 10px !important}
+  .num {font-size: 18px !important; line-height: 30px !important; margin: 1px 0 !important; width: 35px !important; height: 30px !important}
+  .list {padding: 12px 25px 12px 0 !important; background-size: 12px auto !important;}
+  .sepr{display: none !important;}
+  .title {font-size: 18px !important; padding-top: 0px !important; line-height: 21px !important; margin-bottom: 5px !important}
+  .url {font-size: 14px !important;display: block !important;}
+  .desc {font-size: 14px !important; line-height: 18px !important}
+
+  .privacy{padding-top: 5px !important}
+}
+
+@media not all and (min-width: 740px) {
+  .wrapper{padding-bottom: 20px !important}
+}
+
+@media not all and (min-width: 480px){
+  .adTextWrap{width: 74% !important}
+}
+
+@media not all and (min-width: 320px){
+  .num{display: none !important}
+  .list{padding-left: 0 !important}
+  .adTextWrap{width: 85% !important}
+}
+</style>
+
+<!--[if lte IE 8]>
+<style>
+  body{background-position:right top}
+</style>
+<![endif]-->
+
+<script language="JavaScript" type="text/javascript" src="<tag:jssource />"></script>
+</stl_head>
+<stl_body>
+<tag:post_form_html />
+
+  <div id="headerWrapper">
+    <div class="header">
+      <h2 class="heading">Header text for left aligned number with background(square) SERP</h2>
+    </div>
+  </div>
+
+  <div class="wrapper clearfix">
+    <div class="inner-spons-links"><div  class="results query">Sponsored Listings </div></div>
+    <ul class="results">
+      <if:ad_present1>
+        <li>
+          <a href="javascript:void(0)" target="_blank" class="list clearfix">
+            <div class="num"><span>1</span></div>   
+            <div class="adTextWrap">
+              <p class="title">Ad Title 1 Lorem Ipsum dolor sit amet </p>
+              <span class="desc">Ad Description 1 - Lorem Ipsum dolor sit amet, Consectetur </span> 
+              <span class="sepr">|</span>
+              <span class="url">www.ad-url1.com</span> 
+            </div>
+          </a>
+        </li>
+      </if:ad_present1>
+      <if:ad_present2>
+        <li>
+          <a href="javascript:void(0)" target="_blank" class="list clearfix">
+            <div class="num"><span>2</span></div>
+            <div class="adTextWrap">
+              <p class="title">Ad Title 2 Lorem Ipsum dolor sit amet</p>
+              <span class="desc">Ad Description 2 - Lorem Ipsum dolor sit amet, Consectetur</span>
+              <span class="sepr">|</span>
+              <span class="url">www.ad-url2.com</span> 
+            </div>
+          </a>
+        </li>
+      </if:ad_present2>
+      <if:ad_present3>
+        <li>
+          <a href="javascript:void(0)" target="_blank" class="list clearfix">
+            <div class="num"><span>3</span></div>
+            <div class="adTextWrap">
+              <p class="title">Ad Title 3 Lorem Ipsum dolor sit amet</p>
+              <span class="desc">Ad Description 3 - Lorem Ipsum dolor sit amet, Consectetur</span>
+              <span class="sepr">|</span>
+              <span class="url">www.ad-url3.com</span> 
+            </div>
+          </a>
+        </li>
+      </if:ad_present3>
+    </ul>
+  </div>
+
+  <div align="center" id="optOutLink">
+    <a href="javacsript:void(0)" target="_blank">Opt Out</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="javascript:void(0)" target="_blank">Privacy Policy</a>&nbsp;&nbsp;|&nbsp;&nbsp; <a href="javascript:void(0)">Contact Us</a>
+  </div>
+
+</stl_body>
+</html>

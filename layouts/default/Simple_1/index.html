@@ -1,0 +1,175 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<stl_head>
+<meta http-equiv="Content-Type" content="text/html; charset=<tag:charset />">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title><tag:page_title /></title>
+<style type="text/css">
+*{ margin:0; padding: 0 }
+.clearfix:before,
+.clearfix:after {content: '\0020';display: block;overflow: hidden;visibility: hidden;width: 0;height: 0}
+.clearfix:after {clear: both}
+.clearfix {zoom: 1}
+html,body{height: 100%}
+
+body{-webkit-text-size-adjust:100%; background-color:#ffffff;font-family:arial, sans-serif;background-size: cover;background-repeat: no-repeat}
+br{height:0;display: none}
+a{text-decoration: none; outline: none}
+a:hover{cursor: pointer}
+img{border: none}
+
+
+.wrapper {width: 800px;margin:0 auto;padding-bottom: 30px}
+
+.header{padding:14px 10px;background-color:#0071d4}
+.heading{font-size: 30px;color: #fffefe;text-align: center;font-weight: bold}
+
+.inner-spons-links {color: #000;padding: 60px 0 8px;font-size: 17px}
+
+ul{list-style: none}
+.results{ display: block; overflow:hidden}
+.results li{ display: block;margin-bottom: 20px; position: relative; overflow: hidden}
+
+.num{font-size: 26px;color: #3c3c3c; float: left; margin: 18px 0; line-height: 26px; text-align: center}
+
+.adTextWrap{float:left;width: 88%; padding: 0 0 0 25px}
+.list{ word-wrap:break-word; display: block; overflow: hidden;padding: 20px 70px 20px 30px; background:#ffffff url(arrow2.png) 96% center no-repeat;border-radius: 5px;border:1px solid #d4d4d4;transition:all linear 0.1s}
+
+
+.title{font-size: 30px;color: #3c3c3c;line-height: 33px;margin-bottom: 8px;font-weight: normal}
+.desc{color: #454545;display: inline;font-size: 15px;line-height: 18px;margin-bottom: 3px}
+.url{color:#454545; font-size: 15px;display: inline}
+.sepr{color:#454545; font-size: 18px;display: inline}
+
+.results li:hover .list {background:#087bd3 url(arrowHover2.png) 96% center no-repeat;border:1px solid #087bd3}
+
+.results li:hover .title{color: #ffffff}
+.results li:hover .desc{color: #ffffff}
+.results li:hover .url{color: #ffffff}
+.results li:hover .num{color: #ffffff}
+.results li:hover .sepr{color: #ffffff}
+
+
+.privacy{text-align: center;padding-bottom: 15px}
+.privacy a{color:#ffffff;text-align: center;font-size: 13px}
+.privacy a:hover{text-decoration: underline}
+
+#optOutLink{text-align: center; padding: 10px;color:#000000;text-shadow:none}
+#optOutLink a{color:#000000;font-size: 14px;text-transform:capitalize;text-shadow:none}
+#optOutLink a:hover{text-decoration: underline}
+
+@media not all and (min-width: 890px){
+  .wrapper{width: 95% !important}
+  
+}
+@media not all and (min-width: 770px) {
+  body{background-position: top center;background-attachment: fixed !important}
+  .results li{margin-bottom: 10px !important}
+  .inner-spons-links{font-size: 15px !important;padding: 80px 0 5px !important}
+  .adTextWrap{padding:0 0 0 15px !important;width: 85% !important}
+
+  .header{padding: 10px !important}
+  .heading{font-size: 20px !important; line-height: 23px !important}
+
+  .title{font-size: 22px !important;line-height: 25px !important;margin-bottom: 5px !important;}
+  .desc{font-size: 14px !important;line-height: 17px !important;display: block !important}
+  .url{font-size: 14px !important; line-height: 17px !important;display: block !important}
+  .sepr{display: none !important}
+
+  .num{font-size: 22px !important; margin: 3px 0 !important;line-height: 22px !important}
+
+  a.list {padding:15px 40px 15px 15px !important;background-size: 12px auto !important}
+}
+@media not all and (min-width: 666px) {
+  body{background-attachment: scroll !important;background-size: 100% !important}
+}
+@media not all and (min-width: 480px){
+  .adTextWrap{width: 80% !important}
+}
+@media not all and (min-width: 320px){
+  .num {display: none !important}
+  .adTextWrap{width: auto !important;float: none !important;border:none !important;padding-left: 0 !important}
+}
+
+
+</style>
+
+
+<!--[if lte IE 8]>
+<style>
+  body{background-position: top center}
+</style>
+<![endif]-->
+
+
+<script type="text/javascript" src="<tag:jssource />"></script>
+</stl_head>
+
+
+
+<stl_body>
+
+<tag:post_form_html />
+
+<div id="headerWrapper">
+  <div class="header">
+    <h2 class="heading">Header text for Default SERP</h2>
+  </div>
+</div>
+
+
+<div class="wrapper">
+
+  <div class="inner-spons-links">Sponsored Listings</div>
+
+  <ul class="results">
+    <if:ad_present1>
+      <li>
+        <a href="javascript:void(0)" target="_blank" class="list clearfix">
+          <div class="num"><span>1</span></div>   
+          <div class="adTextWrap">
+            <p class="title">Ad Title 1 Lorem Ipsum dolor sit amet</p>
+            <p class="desc">Ad Description 1 - Lorem Ipsum dolor sit amet, Consectetur </p>
+            <span class="sepr"> | </span>
+            <span class="url">www.ad-url1.com</span>
+          </div>
+        </a>
+      </li>
+    </if:ad_present1>
+    <if:ad_present2> 
+      <li>
+        <a href="javascript:void(0)" target="_blank" class="list clearfix" >
+          <div class="num"><span>2</span></div>
+          <div class="adTextWrap">
+            <p class="title">Ad Title 2 Lorem Ipsum dolor sit amet</p>
+            <p class="desc">Ad Description 2 - Lorem Ipsum dolor sit amet, Consectetur</p>
+            <span class="sepr"> | </span>
+            <span class="url"> www.ad-url2.com</span>
+          </div>
+        </a>
+      </li>
+    </if:ad_present2>
+    <if:ad_present3>
+      <li>
+        <a href="javascript:void(0)" target="_blank" class="list clearfix">
+          <div class="num"><span>3</span></div>
+          <div class="adTextWrap">
+            <p class="title">Ad Title 3 Lorem Ipsum dolor sit amet</p>
+            <p class="desc">Ad Description 3 - Lorem Ipsum dolor sit amet, Consectetur </p>
+            <span class="sepr"> | </span>
+            <span class="url">www.ad-url3.com</span>
+          </div>
+        </a>
+      </li>
+    </if:ad_present3>
+  </ul>
+
+</div>
+
+<div align="center" id="optOutLink">
+  <a href="javacsript:void(0)" target="_blank">Opt Out</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="javascript:void(0)" target="_blank">Privacy Policy</a>&nbsp;&nbsp;|&nbsp;&nbsp; <a href="javascript:void(0)">Contact Us</a>
+</div>
+
+</stl_body>
+
+</html>
